@@ -4,6 +4,9 @@ return {
     name = 'vtsls',
     init_options = {
         hostInfo = 'neovim',
+        plugins = {
+            ['@vue/typescript-plugin'] = {}
+        }
     },
     filetypes = {
         'javascript',
@@ -12,6 +15,7 @@ return {
         'typescript',
         'typescriptreact',
         'typescript.tsx',
+        'vue',
     },
     root_dir = function(bufnr, on_dir)
         -- The project root is where the LSP can be started from
