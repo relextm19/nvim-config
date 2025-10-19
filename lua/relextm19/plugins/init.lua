@@ -6,5 +6,6 @@ local blink = require("relextm19.plugins.blink")
 local telescope = require("relextm19.plugins.telescope")
 local lspconfing = require("relextm19.plugins.lspconfig")
 local colors = require("relextm19.plugins.colors")
+local autotag = require("relextm19.plugins.autotag")
 
-return {unpack(oil), unpack(mason), unpack(treesitter),unpack(autopairs),unpack(blink), unpack(telescope), unpack(lspconfing), unpack(colors)}
+return {unpack(oil), unpack(mason), unpack(treesitter),unpack(autopairs),unpack(blink), unpack(telescope), unpack(lspconfing), unpack(colors), unpack(autotag)}
