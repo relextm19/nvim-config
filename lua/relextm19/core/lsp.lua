@@ -1,18 +1,14 @@
-vim.lsp.enable({
-    "gopls",
-    "lua_ls"
-})
+-- Enable LSP servers
+vim.lsp.enable({ "gopls", "lua_ls", "ts_ls", "vtsls" })
+vim.lsp.enable("vue_ls")
 
+-- Diagnostics setup
 vim.diagnostic.config({
     virtual_lines = true,
-    -- virtual_text = true,
     underline = true,
     update_in_insert = false,
     severity_sort = true,
-    float = {
-        border = "rounded",
-        source = true,
-    },
+    float = { border = "rounded", source = true },
     signs = {
         text = {
             [vim.diagnostic.severity.ERROR] = "󰅚 ",
